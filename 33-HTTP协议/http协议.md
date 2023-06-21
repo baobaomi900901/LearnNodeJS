@@ -1,5 +1,7 @@
 # http 协议
 
+<br>
+
 ## 请求方法
 
 | 请求方法                  | 说明                                                                                                                                     |
@@ -15,7 +17,11 @@
 | OPTIONS                   | 允许客户端查看服务器的性能。                                                                                                             |
 | TRACE                     | 回显服务器收到的请求，主要用于测试或诊断。                                                                                               |
 
+<br>
+
 ## 报文结构
+
+![Alt text](image-1.png)
 
 ### 请求行
 
@@ -23,4 +29,67 @@
 | -------- | ---------------------- | ----------- |
 | GET      | https://www.baidu.com/ | HTTP/1.1    |
 
-`
+<br>
+
+> 例子 URL:
+> | 协议名 | 主机名 | 端口号 | 路径 | 查询字符串 |
+> | -------- | ------------- | ------ | ------- | ------------------------ |
+> | https:// | search.jd.com | :443 | /search | ?keyword=oneplus&psort=3 |
+
+<br>
+
+### 请求头
+
+键值对形式:
+![Alt text](image.png)
+[🔍 请求头文档](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers)
+
+<br>
+
+### 请求体
+
+字符串键值对形式:
+
+%40 是 @, = 是 : , & 是 /
+
+也可以是 json 格式
+
+<br>
+
+## HTTP 响应报文
+
+![Alt text](image-2.png)
+
+### 响应头
+
+![Alt text](image-3.png)
+
+状态码分类:
+![Alt text](image-5.png)
+常用响应状态码:
+![Alt text](image-4.png)
+![Alt text](image-6.png)
+[🔍 状态码文档](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status)
+
+<br>
+
+### 响应头
+
+![Alt text](image-7.png)
+
+content-type: 响应体的类型
+
+content-length: 响应体的长度
+
+[🔍 响应头文档](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers)
+
+### 响应体
+
+![Alt text](image-8.png)
+![Alt text](image-9.png)
+
+<br>
+
+### 获取 HTTP 请求报文
+
+![Alt text](image-10.png)
