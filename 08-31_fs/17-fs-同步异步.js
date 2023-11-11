@@ -21,6 +21,6 @@ const fs = require('fs'); // require是一个方法，用来加载模块的, fs�
 // })
 // console.log(1 + 1); //优先执行
 
-// 同步写入文件
-fs.writeFileSync('./座右铭2.text', '三人行，则必有我师焉3')
+// 同步写入文件, 毁掉函数 
+fs.writeFileSync('./17-座右铭.text', '三人行，则必有我师焉-17')
 console.log(1 + 1);
